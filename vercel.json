@@ -1,0 +1,14 @@
+{
+   "version": 2,
+   "name": "to-do-list",
+   "builds": [
+      { 
+        "src": "./app.js", 
+        "use": "@vercel/node" }
+   ],
+   "routes": [
+      {
+         "src": "/(.*)", 
+         "dest": "/" }
+   ]
+}
