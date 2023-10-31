@@ -9,16 +9,16 @@
   <form  action="/delete"  method="post">
     <div class="item">
       <input type="checkbox" name="checkbox" value="<%=item._id%>" onChange="this.form.submit()">
-      <p><%= item.name %></p>
+      <p><%= item.Item %></p>
     </div>
-    <input type="hidden" name="listName" value="<%= listTitle %>"></input>
+    <input type="hidden" name="name" value="<%= listTitle %>"></input>
   </form>
 
   <% });%>
 
-      <form class="item" action="/" method="post">
-        <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
-        <button type="submit" value="<%=listTitle%>" name="list">+</button>
+      <form class="item" action="/insert" method="post">
+        <input type="text" name="newItem" placeholder="Add a task" autocomplete="off">
+        <button  type="submit" value="<%=listTitle%>" name="name">+</button>
       </form>
   </div>
 
