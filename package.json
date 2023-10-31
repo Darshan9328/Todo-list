@@ -2,8 +2,6 @@
   "name": "todolist-v1",
   "version": "1.0.0",
   "main": "app.js",
-  
-
   "scripts": {
     "start": "nodemon app.js"
   },
@@ -17,7 +15,8 @@
     "ejs": "^2.6.1",
     "express": "^4.18.2",
     "lodash": "^4.17.21",
-    "mongoose": "^6.7.2"
+    "mongoose": "^6.12.2",
+    "nodemon": "^3.0.1"
   },
   "description": ""
 }
